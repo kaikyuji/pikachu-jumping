@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jump Pikachu!</title>
+    <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="gamescreen">
+        <div class="points">
+            <h6 class="actualPoints">000</h6>
+            <h6 class="recordPoints">000</h6>
+        </div>
+        <img src="imgs/pikachu-running.gif" class="pikachu">
+        <img src="imgs/pokeball.png" class="pokeball">
+        <button class="tryagain hidden" onclick="refresh()">Try Again</button>
+    </div>
+    <div onclick="jumpOnButton()" class="jumpButtonBox">
+        <div class="jumpButton">JUMP</div>
+    </div>
+</body>
+</html>
+<script src="jumping.js"></script>
