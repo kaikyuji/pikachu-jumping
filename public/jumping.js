@@ -35,7 +35,9 @@ function verifyCollision(){
         pikachu.src = 'public/imgs/fainted.png'
         tryAgain.classList.remove('hidden')
         document.removeEventListener('keydown', checkJumping)
-        record = pointsNow
+        if(pointsNow > record){
+            record = pointsNow
+        }
     }else{
         pointsNow+= 10
         h6ActualPoints.innerText = pointsNow
